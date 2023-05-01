@@ -10,6 +10,18 @@ obj/
 *.vsconfig
 packages/
 
+# NuGet-generated files
+*.nuget.*
+
+# Build and cache files
+project.assets.json
+project.nuget.cache
+*/net7.0/*.assets.cache
+*/net7.0/*.csproj.AssemblyReference.cache
+
+# IDE-generated files
+*.GeneratedMSBuildEditorConfig.editorconfig
+
 # User-specific files
 *.rsuser
 *.suo
