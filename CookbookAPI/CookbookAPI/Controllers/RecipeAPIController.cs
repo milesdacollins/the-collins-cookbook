@@ -6,12 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CookbookAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/RecipeAPI")]
     [ApiController]
-    public class CookbookAPIController : ControllerBase
+    public class RecipeAPIController : ControllerBase
     {
         private readonly IRecipeRepository _recipeDb;
-        public CookbookAPIController(IRecipeRepository recipeDb)
+        public RecipeAPIController(IRecipeRepository recipeDb)
         {
             _recipeDb = recipeDb;
         }
