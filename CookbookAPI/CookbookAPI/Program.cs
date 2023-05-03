@@ -1,5 +1,6 @@
 using CookbookAPI;
 using CookbookAPI.Repository;
+using RecipeAPI.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRecipeRepository, RecipeRepository>();
+builder.Services.AddScoped<IRecipeService, RecipeService>();
 
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 
