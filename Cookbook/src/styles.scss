@@ -1,4 +1,14 @@
+@import "./assets/styles/modules.scss";
+// @import "~bootstrap/dist/css/bootstrap.css";
+
 /* You can add global styles to this file, and also import other style files */
-body {
-    background-color: #E5E4E2;
-}
+
+// $primary: #52BE80;
+// $secondary: orange;
+// $success: #3e8d63;
+// $info: #7854e4;
+// $warning: #b8c924;
+// $danger: #d62518;
+@import "./assets/styles/theme.scss";
+
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
