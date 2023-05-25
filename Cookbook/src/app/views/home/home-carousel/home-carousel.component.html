@@ -1,0 +1,13 @@
+<ng-container *ngIf="slides$ | async as slides">
+    <ngb-carousel [interval]="4000" [keyboard]="true" [pauseOnHover]="true">
+        <ng-template ngbSlide *ngFor="let slide of slides">
+          <div class="wrapper">
+            <img [src]="slide.src" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{ slide.title }}</h3>
+            <p>{{ slide.subtitle }}</p>
+          </div>
+        </ng-template>
+    </ngb-carousel>
+</ng-container>
