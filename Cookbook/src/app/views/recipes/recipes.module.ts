@@ -3,11 +3,13 @@ import { RecipeListComponent } from "./recipe-list/recipe-list.component";
 import { NgModule } from "@angular/core";
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipesRoutingModule } from "./recipes-routing.module";
+import { RecipeCreateComponent } from './recipe-create/recipe-create.component';
 
 @NgModule({
     declarations: [
        RecipeListComponent,
-       RecipeComponent 
+       RecipeComponent,
+       RecipeCreateComponent 
     ],
     imports: [
       CommonModule,
